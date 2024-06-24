@@ -1,20 +1,26 @@
-// Import the functions you need from the SDKs you need
+// FirebaseConfig.js
+
+
 import { initializeApp } from "firebase/app";
-import {getFirestore} from 'firebase/firestore';
-import {getAuth} from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC6wjgzCXn4koguGSt_W82hMX5NfYEXM8A",
-  authDomain: "myecom-7f79a.firebaseapp.com",
-  projectId: "myecom-7f79a",
-  storageBucket: "myecom-7f79a.appspot.com",
-  messagingSenderId: "278249904398",
-  appId: "1:278249904398:web:48fdff6f7d1306f9a79f5f"
+  apiKey: "AIzaSyCm_uBkhniYYWA3P-AZMrydItc6Aw8AAXE",
+  authDomain: "ecommer-3a799.firebaseapp.com",
+  projectId: "ecommer-3a799",
+  storageBucket: "ecommer-3a799.appspot.com",
+  messagingSenderId: "239245312753",
+  appId: "1:239245312753:web:20ee7091ff9ebbaafa1f50",
+  measurementId: "G-VZB0G5G4C8"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const fireDB = getFirestore(app);
-const auth = getAuth(app);
 
-export {auth,fireDB}
+// Initialize Firebase Auth and Firestore
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
+const fireDB = getFirestore(app);
+
+export { auth, googleProvider, fireDB };

@@ -16,7 +16,7 @@ function Homepage() {
       <HomePageProductCard/>
       <Track/>
       <Testimonial/>
-      <Loader/>
+      {/* <Loader/> */}
     </Loyout>
   )
 }

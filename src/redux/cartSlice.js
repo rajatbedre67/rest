@@ -1,5 +1,3 @@
-// cartSlice.js
-
 import { createSlice } from '@reduxjs/toolkit';
 
 // Load initial state from localStorage or initialize as an empty array
@@ -13,12 +11,16 @@ const cartSlice = createSlice({
       state.push({
         ...action.payload,
         addedAt: new Date().toISOString(),
+        quantity: 1, // Ensure initial quantity is set to 1
       });
       // Save updated state to localStorage
       localStorage.setItem('cart', JSON.stringify(state));
     },
     deleteFromCart(state, action) {
-      return state.filter(item => item.id !== action.payload.id);
+      const newState = state.filter(item => item.id !== action.payload.id);
+      // Save updated state to localStorage
+      localStorage.setItem('cart', JSON.stringify(newState));
+      return newState;
     },
     incrementQuantity(state, action) {
       const { payload } = action;

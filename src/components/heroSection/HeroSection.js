@@ -1,7 +1,7 @@
 const HeroSection = () => {
     return (
         <div>
-           <img className=" lg:h-full" src="https://devknus.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Feeee8099-a731-4be4-b949-97588572fb6b%2Faf556a00-6601-4a15-8931-dab16ebd5981%2FUntitled.png?table=block&id=4ec2cb9b-b4a9-4de8-8195-725a3a795de5&spaceId=eeee8099-a731-4be4-b949-97588572fb6b&width=2000&userId=&cache=v2" alt="img" />
+           <img className=" lg:w-full lg:h-80" src="https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/newport-hotel-group-parent/ocean-house-gloucester/siteimages/book-direct-special-hero.jpg?width=1800&height=650" alt="img" />
         </div>
     );
 }

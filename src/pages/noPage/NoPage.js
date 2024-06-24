@@ -3,7 +3,7 @@ import React from 'react'
 function Nopage() {
   return (
     <div>
-      Nopage
+      Nopage try again 404..... 
     </div>
   )
 }

@@ -35,7 +35,7 @@ const HomePageProductCard = () => {
     return (
         <div className="mt-10">
             <div className="">
-                <h1 className="text-center mb-5 text-2xl font-semibold">Bestselling Products</h1>
+                <h1 className="text-center mb-5 text-2xl font-semibold">All new Items</h1>
             </div>
 
             <section className="text-gray-600 body-font">
@@ -56,7 +56,7 @@ const HomePageProductCard = () => {
                                         />
                                         <div className="p-6">
                                             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                                                E-bharat
+                                                All In One
                                             </h2>
                                             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                                                 {title.substring(0, 25)}
@@ -69,13 +69,13 @@ const HomePageProductCard = () => {
                                                 {isInCart ? (
                                                     <button
                                                         onClick={() => deleteCart(item)}
-                                                        className="bg-red-700 hover:bg-red-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                        className="bg-red-800 hover:bg-red-600 w-full text-white py-[4px] rounded-lg font-bold">
                                                         Delete From Cart
                                                     </button>
                                                 ) : (
                                                     <button
                                                         onClick={() => addCart(item)}
-                                                        className="bg-pink-500 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                        className="bg-orange-500 hover:bg-orange-600 w-full text-white py-[4px] rounded-lg font-bold">
                                                         Add To Cart
                                                     </button>
                                                 )}

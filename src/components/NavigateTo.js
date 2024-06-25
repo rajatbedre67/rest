@@ -20,3 +20,4 @@ const NavigateTo = ({ to, triggerNextStep, onNavigate }) => {
 };
 
 export default NavigateTo;
+

@@ -157,7 +157,7 @@ import toast from "react-hot-toast";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, fireDB, googleProvider } from "../../firebase/FirebaseConfig";
 import Loader from "../../components/loader/Loader";
-import { collection, onSnapshot, query, where } from "firebase/firestore";
+import { Timestamp, addDoc, collection, onSnapshot, query, where } from "firebase/firestore";
 
 const Login = () => {
     const context = useContext(myContext);

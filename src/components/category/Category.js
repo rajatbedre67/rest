@@ -31,7 +31,7 @@ const Category = () => {
                         {categories.map((item, index) => (
                             <div key={index} className="px-3 lg:px-10">
                                 <div
-                                    onClick={() => {if(item.name == 'Food'){
+                                    onClick={() => {if(item.name === 'Food'){
                                         navigate('/category/Food')
                                     } navigate(`/category/${item.name}`)}}
                                     className="w-16 h-16 lg:w-24 lg:h-24 max-w-xs rounded-full bg-orange-400 transition-all hover:bg-orange-300 cursor-pointer mb-1"

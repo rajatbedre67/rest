@@ -17,7 +17,7 @@ const categories = [
     {
         image: 'https://cdn-icons-png.flaticon.com/128/9425/9425742.png',
         name: 'Food'
-    } 
+    } ,
 ];
 
 const Category = () => {
